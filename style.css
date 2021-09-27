@@ -1,0 +1,121 @@
+:root {
+  --clr-primary: #e0e8ff;
+  --clr-secondary: #3829e0;
+  --clr-plan-bg: #f5f7ff;
+  --clr-icon-bg: #dfe5fb;
+  --clr-heading : #1f2f56;
+	--clr-text: #727aa2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+	flex-direction: column;
+  background: #d6e1ff;
+	align-items: center;
+}
+img {
+  width: 100%;
+}
+
+main {
+  width: 30%;
+	min-width: 350px;
+	max-width: 500px;
+  margin: auto;
+  border-radius: 20px;
+  align-self: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+
+#bottom {
+	padding: 2rem 3rem;
+	text-align: center;
+}
+h2, h4 {
+	color: var(--clr-heading);
+	font-weight: 900;
+}
+h2 {
+	margin-top: 0;
+}
+h4 {
+	margin-bottom: 0;
+}
+#price {
+	margin-top: .3em;
+}
+p {
+	color: var(--clr-text);
+}
+#planDiv {
+	display: flex;
+	background: var(--clr-plan-bg);
+	border-radius: 15px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#musicIconDiv {
+	background: var(--clr-icon-bg);
+	width: 45px;
+	height: 45px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+}
+
+.bi {
+	color: var(--clr-text);
+	font-size: 1.3em;
+}
+
+#changeBtn {
+	color: var(--clr-secondary);
+	font-weight: 700;
+}
+#changeBtn:active {
+	color: #766cf1;
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	font-weight: 700;
+}
+#paymentBtn {
+	color: #fff;
+	background: var(--clr-secondary);
+	padding: .8em;
+	border-radius: 10px;
+	margin: 1.5rem 0;
+}
+#paymentBtn:active {
+	background: #766cf1;
+}
+
+#cancelBtn {
+	color: var(--clr-text);
+}
+#cancelBtn:active {
+	color: var(--clr-heading);
+}
+
+@media (max-width: 1000px) {
+	#bottom {
+		padding: 2rem;
+	}
+}
